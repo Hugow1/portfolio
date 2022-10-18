@@ -60,6 +60,7 @@ function Contact({}: Props) {
           name="contact"
           method="POST"
           data-netlify="true"
+          action="/"
           className="flex flex-col mx-auto space-y-2 w-fit"
         >
           <div className="flex flex-col space-y-2 md:space-x-2 md:space-y-0 md:flex-row">
@@ -68,12 +69,14 @@ function Contact({}: Props) {
               placeholder="Name"
               className="contactInput"
               type="text"
+              required
             />
             <input
               {...register("email")}
               placeholder="Email"
               className="contactInput"
               type="email"
+              required
             />
           </div>
           <input
@@ -81,11 +84,13 @@ function Contact({}: Props) {
             placeholder="Subject"
             className="contactInput"
             type="text"
+            required
           />
           <textarea
             {...register("message")}
             placeholder="Message"
             className="contactInput"
+            required
           />
           <button
             type="submit"

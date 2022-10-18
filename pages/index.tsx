@@ -23,10 +23,16 @@ type Props = {
 };
 
 const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
+
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-x-hidden scroll-smooth">
       <Head>
-        <title>Hugo Winder Portfolio</title>
+        <title>Hugo Winder - A Portfolio Website</title>
+        <meta
+          name="description"
+          content="Personal portfolio website with current work and development/side projects that I have been working on."
+        />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
       <Header socials={socials} />
