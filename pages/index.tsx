@@ -1,4 +1,4 @@
-import type { GetStaticProps } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
 import Contact from "../components/Contact";
@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
-import { Experience, PageInfo, Project, Skill, Social } from "../typings.d";
+import { Experience, PageInfo, Project, Skill, Social } from "../typings";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchExperiences } from "../utils/fetchExperiences";
 import { fetchSkills } from "../utils/fetchSkills";
