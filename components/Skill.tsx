@@ -17,7 +17,7 @@ function Skill({ directionLeft, skill }: Props) {
         height={50}
         width={50}
         alt={skill.title}
-        className="object-cover w-24 h-24 transition duration-300 ease-in-out border border-gray-500 rounded-full xl:w-32 xl:h-32 filter group-hover:grayscale"
+        className="object-contain w-24 h-24 transition duration-300 ease-in-out border border-gray-500 rounded-full xl:w-32 xl:h-32 filter group-hover:grayscale"
       />
       <div className="absolute z-0 w-24 h-24 transition duration-300 ease-in-out rounded-full opacity-0 group-hover:opacity-80 group-hover:bg-white xl:w-32 xl:h-32">
         <div className="flex items-center justify-center h-full">

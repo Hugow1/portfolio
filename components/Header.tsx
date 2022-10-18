@@ -27,16 +27,16 @@ export default function Header({ socials }: Props) {
         }}
         className="flex flex-row items-center"
       >
-        {/* Socials */}
         {socials?.map((social) => (
           <SocialIcon
             key={social._id}
             url={social.url}
+            target="_blank"
             fgColor="gray"
             bgColor="transparent"
           />
         ))}
-      </motion.div>{" "}
+      </motion.div>
       <Link href="#contact">
         <motion.div
           initial={{

@@ -34,15 +34,15 @@ function Contact({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10">
+      <div className="flex flex-col justify-center max-w-sm space-y-10 md:max-w-none">
         <h4 className="text-4xl font-semibold text-center">
           I&apos;ve got just what you need.{" "}
           <span className="underline decoration-[#f7ab0a]/50">
             Let&apos;s talk!
           </span>
         </h4>
-        <div className="space-y-10">
-          {/* <div className="flex items-center space-x-5">
+        {/* <div className="space-y-10">
+          <div className="flex items-center space-x-5">
             <PhoneIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
             <p className="text-2xl">0612345678</p>
           </div>
@@ -53,14 +53,16 @@ function Contact({}: Props) {
           <div className="flex items-center space-x-5">
             <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
             <p className="text-2xl">Straat naam 1</p>
-          </div> */}
-        </div>
+          </div>
+        </div> */}
 
         <form
-          onSubmit={handleSubmit(onSubmit)}
+          name="contact"
+          method="POST"
+          data-netlify="true"
           className="flex flex-col mx-auto space-y-2 w-fit"
         >
-          <div className="flex space-x-2">
+          <div className="flex flex-col space-y-2 md:space-x-2 md:space-y-0 md:flex-row">
             <input
               {...register("name")}
               placeholder="Name"
@@ -85,7 +87,10 @@ function Contact({}: Props) {
             placeholder="Message"
             className="contactInput"
           />
-          <button className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold">
+          <button
+            type="submit"
+            className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold"
+          >
             Submit
           </button>
         </form>

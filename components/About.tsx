@@ -20,17 +20,17 @@ function About({ pageInfo }: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly"
+      className="relative flex flex-col items-center h-screen px-10 mx-auto text-center justify-evenly md:text-left md:flex-row max-w-7xl"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
       <Image
         src={urlFor(pageInfo?.profilePicture).url()}
-        width={500}
-        height={500}
+        width={300}
+        height={300}
         alt="Hugo Winder"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h96 xl:w-[500px] xl:h-[600px]"
+        className="object-cover -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h96 xl:w-[500px] xl:h-[600px]"
       />
 
       <div className="px-0 space-y-10 md:px-10">
