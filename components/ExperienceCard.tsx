@@ -11,15 +11,15 @@ function ExperienceCard({ experience }: Props) {
   return (
     <div className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center p-10 bg-[#292929] opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <Image
-        src={urlFor(experience.companyImage).url()}
+        src={urlFor(experience?.companyImage).url()}
         className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
         width={500}
         height={500}
         alt=""
       />
       <div className="px-0 md:p-10 ">
-        <h4 className="text-4xl font-light">{experience.jobTitle}</h4>
-        <p className="text-2xl font-bold mt--1">{experience.company}</p>
+        <h4 className="text-4xl font-light">{experience?.jobTitle}</h4>
+        <p className="text-2xl font-bold mt--1">{experience?.company}</p>
         <div className="flex my-2 space-x-2">
           {experience.technologies?.map((technology) => (
             <Image
