@@ -15,9 +15,8 @@ function ProjectCard({ project, i }: Props) {
         src={urlFor(project.image).url()}
         width={500}
         height={500}
-        placeholder="blur"
         alt=""
-        className="object-contain"
+        className="object-contain max-h-[435px]"
       />
       <div className="max-w-6xl px-0 space-y-5 md:px-10">
         <h4 className="text-4xl font-semibold text-center">

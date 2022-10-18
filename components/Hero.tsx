@@ -31,7 +31,6 @@ export default function Hero({ pageInfo }: Props) {
         height={500}
         alt="Hugo Winder"
         priority
-        placeholder="blur"
         className="relative object-cover w-32 h-32 mx-auto rounded-full"
       />
       <div className="z-20">
