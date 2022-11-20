@@ -26,7 +26,12 @@ function Projects({ projects }: Props) {
       </h3>
       <div className="relative z-20 flex w-full mt-24 overflow-x-scroll snap-x snap-mandatory">
         {projects?.map((project, i) => (
-          <ProjectCard key={project._id} project={project} i={i} />
+          <ProjectCard
+            key={project._id}
+            project={project}
+            i={i + 1}
+            total={projects.length}
+          />
         ))}
       </div>
       <div className="w-full absolute top-[30%] bg-[#f7ab0a]/10 left-0 h-[500px] -skew-y-12"></div>

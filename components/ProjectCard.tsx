@@ -6,9 +6,10 @@ import { urlFor } from "../sanity";
 type Props = {
   project: Project;
   i: number;
+  total: number;
 };
 
-function ProjectCard({ project, i }: Props) {
+function ProjectCard({ project, i, total }: Props) {
   return (
     <div className="flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen p-20 px-10 space-y-5 snap-center md:p-44">
       <Image
@@ -21,7 +22,7 @@ function ProjectCard({ project, i }: Props) {
       <div className="max-w-6xl px-0 space-y-5 md:px-10">
         <h4 className="text-4xl font-semibold text-center">
           <span className="underline decoration-[#f7ab0a]/50">
-            {project?.title}
+            {project?.title} - {i}/{total}
           </span>
         </h4>
         <div className="flex items-center justify-center space-x-2">
