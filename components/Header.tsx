@@ -37,7 +37,7 @@ export default function Header({ socials }: Props) {
           />
         ))}
       </motion.div>
-      <Link href="#contact">
+      {/* <Link href="#contact">
         <motion.div
           initial={{
             x: 500,
@@ -64,7 +64,7 @@ export default function Header({ socials }: Props) {
             Get in Touch
           </p>
         </motion.div>
-      </Link>
+      </Link> */}
     </header>
   );
 }
